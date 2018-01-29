@@ -70,7 +70,7 @@ install_node() {
 install_npm() {
   # Optionally bootstrap a different npm version
   if [ ! $npm_version ] || [[ `npm --version` == "$npm_version" ]]; then
-    info "Using default npm version"
+    info "Using npm $npm_version"
   else
     info "Downloading and installing npm $npm_version (replacing version `npm --version`)..."
     cd $build_dir
